@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style-sign-up.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h2>Ingrese los datos para registrarse</h2>
+            <form id="signup-form">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" required>
+    
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+    
+                <label for="estrato">Estrato:</label>
+                <input type="number" id="estrato" min="1" max="6" required>
+    
+                <label for="fecha">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha" required>
+    
+                <label for="grupo-sanguineo">Grupo Sanguíneo:</label>
+                <select id="grupo-sanguineo" required>
+                    <option value="">Seleccione</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+    
+               <div class="final">
+                <fieldset>
+                    <legend>Género</legend>
+                    <div class="contenido">
+                        <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+                        <label><input type="radio" name="genero" value="Femenino"> Femenino</label>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Actividades Favoritas</legend>
+                    <div class="contenido">
+                        <label><input type="checkbox" value="Futbol"> Fútbol</label>
+                        <label><input type="checkbox" value="Baloncesto"> Baloncesto</label>
+                        <label><input type="checkbox" value="Voleibol"> Voleibol</label>
+                        <label><input type="checkbox" value="Ciclismo"> Ciclismo</label>
+                    </div>
+                </fieldset>
+               </div>
+    
+                <button type="button" id="register-btn">Registrar</button>
+                <button type="button" id="cancel-btn"><a href="admin.html">Cancel</a></button>
+            </form>
+        </div>
+        <script src="js/sign-up.js"></script>
+    </body>
+</body>
+</html>
